@@ -1,0 +1,39 @@
+:root {
+  --background: #fbfaf9; /* Fondo claro */
+  --primary: #4089c7; /* Gris claro */
+  --grey: #9e9e9e; /* Gris estándar */
+  --highlight: #424242; /* Gris oscuro */
+  --alert: #4089c7; /* Azul claro */
+  --info: #64b5f6; /* Azul suave claro */
+  --error: #ff5252; /* Rojo claro */
+  --error-warning: #ff1744; /* Rojo intenso claro */
+  --text: #333333; /* Texto claro */
+  --button: #2a27c2;
+}
+[data-theme='dark'] {
+  --background: #0d0d19; /* Fondo oscuro */
+  --primary: #cfd8dc; /* Gris claro */
+  --grey: #9e9e9e; /* Gris estándar */
+  --highlight: #424242; /* Gris oscuro */
+  --alert: #1976d2; /* Azul oscuro */
+  --info: #42a5f5; /* Azul suave oscuro */
+  --error: #d32f2f; /* Rojo oscuro */
+  --error-warning: #c2185b; /* Rojo intenso oscuro */
+  --text: #ffffff; /* Texto oscuro sobre fondo oscuro */
+  --button: #2a27c2;
+}
+
+.v-main {
+  background-color: var(--background);
+  background: radial-gradient(circle, var(--info) 0%, var(--alert) 100%);
+  background-size: cover;
+  background-image: url('../assets/BG.svg');
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+html {
+  overflow-y: auto;
+}
